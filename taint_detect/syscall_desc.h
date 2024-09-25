@@ -51,7 +51,7 @@
 #include <linux/utsname.h>
 
 #include <signal.h>
-#include <ustat.h>
+// #include <ustat.h>
 
 #include "libdft_api.h"
 #include "branch_pred.h"

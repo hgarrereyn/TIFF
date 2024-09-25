@@ -66,7 +66,7 @@
 #include <poll.h>
 #include <string.h>
 #include <unistd.h>
-#include <ustat.h>
+// #include <ustat.h>
 #include <signal.h>
 #include <time.h>
 #include <pthread.h>
@@ -377,7 +377,8 @@ syscall_desc_t syscall_desc[SYSCALL_MAX] = {
 	/* __NR_personality = 135 */
 	{ 1, 0, 0, {0 ,0 ,0 ,0 ,0 ,0}, NULL, NULL},
 	/* __NR_ustat = 136 */
-	{ 2, 0, 1, {0 ,sizeof(struct ustat) ,0 ,0 ,0 ,0}, NULL, NULL},
+	// { 2, 0, 1, {0 ,sizeof(struct ustat) ,0 ,0 ,0 ,0}, NULL, NULL},
+	{ 2, 0, 1, {0 ,32 ,0 ,0 ,0 ,0}, NULL, NULL},
 	/* __NR_statfs = 137 */
 	{ 2, 0, 1, {0 ,sizeof(struct statfs) ,0 ,0 ,0 ,0}, NULL, NULL},
 	/* __NR_fstatfs = 138 */

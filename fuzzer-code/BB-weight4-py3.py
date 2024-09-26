@@ -262,10 +262,10 @@ def main():
     strFile=outFile+".names"
     outFile=outFile+".pkl"
     fd=open(outFile,'wb')
-    pickle.dump(fweight,fd)
+    pickle.dump(fweight,fd,protocol=2)
     fd.close()
     strFD=open(strFile,'wb')
-    pickle.dump(strings,strFD)
+    pickle.dump(strings,strFD,protocol=2)
     strFD.close()
     print("[*] Saved results in pickle files: %s, %s"%(outFile,strFile))
 
